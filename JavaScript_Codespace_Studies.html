@@ -8,7 +8,7 @@
 </head>
 <body>
     <hgroup>
-        <h1> Selecting Element by ID</h1>
+        <h1 id="heading"> Selecting Element by ID</h1>
         <h2 id="change">Change this</h2>
     </hgroup>
 
@@ -18,8 +18,12 @@
 
      function myFunction() {
          document.getElementById("change").innerHTML = "<button id=\"newButton\"> New Button </button>";
-
         }
+
+    document.getElementById("newButton").onclick = function() {
+        document.getElementById("heading").innerHTML = "The new heading";
+        
+    }
     </script>
 </body>
 
