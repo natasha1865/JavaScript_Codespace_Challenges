@@ -6,18 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume</title>
 </head>
+
 <body>
-    <hgroup>
-        <h1> Selecting Element by ID</h1>
-        <h2 id="change">Change this</h2>
-    </hgroup>
 
-    <button id="myButton" onclick="myFunction()">Click Me</button>
+    <p id="aParagraph">Javascript is ... </p>
+    <button id="appendButton">Append text</button>
+    <span id="emptyParagraph"></span>
+    <button id="createHeading">Create text</button>
+
     <script>
-        
-        function myFunction() {
-            document.getElementById("change").innerHTML = "Hello Friend";
+        document.getElementById("appendButton").onclick = function () {
+            document.getElementById("aParagraph").innerHTML = "I think " + document.getElementById("aParagraph").innerHTML + "awesome!";
+        }
 
+        document.getElementById("createHeading").onclick = function () {
+            document.getElementById("emptyParagraph").innerHTML = "<h3>Hi there!</h3>";
         }
     </script>
 </body>
