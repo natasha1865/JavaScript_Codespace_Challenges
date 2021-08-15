@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" onmousemove="printy(event)">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,7 +12,7 @@
         }
     </style>
 </head>
-<body onmousemove="printy(event)">
+<body>
     <hgroup>
         <h1>Conditionals in Javascript</h1>
         <h2 id="subheading"> Where's my mouse?</h2>
@@ -24,6 +24,9 @@
         const docHeight = window.innerHeight;
         function printy(e) {
             let mouseY = e.clienty;
+            if (mouseY < docHeight/2) {
+                document.getElementById("readind").innerHTML = "up"
+            }
         }
     </script>
 
