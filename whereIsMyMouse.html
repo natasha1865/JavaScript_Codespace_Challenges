@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" onmousemove="printy(event)">
+<html lang="en" onmousemove="printY(event)">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -22,10 +22,10 @@
     <script>
 
         const docHeight = window.innerHeight;
-        function printy(e) {
-            let mouseY = e.clienty;
-            if (mouseY < docHeight/2) {
-                document.getElementById("readind").innerHTML = "up"
+        function printY(e) {
+            let mouseY = e.clientY;
+            if(mouseY < docHeight/2) {
+                document.getElementById("reading").innerHTML = "UP";
             }
         }
     </script>
