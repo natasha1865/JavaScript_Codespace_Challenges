@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditionals</title>
+    <style>
+        p{
+            font-size: 4em;
+            font-weight: 800;
+        }
+    </style>
+</head>
+<body onmousemove="printy(event)">
+    <hgroup>
+        <h1>Conditionals in Javascript</h1>
+        <h2 id="subheading"> Where's my mouse?</h2>
+    </hgroup>
+    <p id="reading"></p>
+
+    <script>
+
+        console.log(window.innerHeight);
+        function printy(e) {
+        console.log(e.clienty);
+        }
+    </script>
+
+
+    
+</body>
+</html>
