@@ -22,12 +22,17 @@
     <script>
 
         const docHeight = window.innerHeight;
+        const docWidth = window.innerWidth;
         function printY(e) {
             let mouseY = e.clientY;
             let mouseX = e.clientX;
             if(mouseY < docHeight/2) {
                 document.getElementById("reading").innerHTML = "UP";
             }else{document.getElementById("reading").innerHTML = "DOWN";
+            }
+            if(mouseX < docWidth/2) {
+                document.getElementById("reading").innerHTML = "LEFT";
+            }else{document.getElementById("reading").innerHTML = "RIGHT";
             }
         }
     </script>
