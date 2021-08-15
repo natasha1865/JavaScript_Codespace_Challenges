@@ -24,6 +24,7 @@
         const docHeight = window.innerHeight;
         function printY(e) {
             let mouseY = e.clientY;
+            let mouseX = e.clientX;
             if(mouseY < docHeight/2) {
                 document.getElementById("reading").innerHTML = "UP";
             }else{document.getElementById("reading").innerHTML = "DOWN";
