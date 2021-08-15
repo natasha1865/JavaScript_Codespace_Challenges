@@ -32,7 +32,8 @@
             }render out part of code that is not rendering*/
             if(mouseX < docWidth/2 && mouseY < docHeight/2){
                 document.getElementById("reading").innerHTML = "TOP LEFT";
-            }else{document.getElementById("reading").innerHTML = "RIGHT";
+            }else if(mouseX > docWidth/2 && mouseY < docHeight/2){
+                document.getElementById("reading").innerHTML = "TOP RIGHT";
             }
         }
     </script>
