@@ -34,6 +34,9 @@
                 document.getElementById("reading").innerHTML = "TOP LEFT";
             }else if(mouseX > docWidth/2 && mouseY < docHeight/2){
                 document.getElementById("reading").innerHTML = "TOP RIGHT";
+            }else if(mouseX < docWidth/2 && mouseY > docHeight/2){
+                document.getElementById("reading").innerHTML = "BOTTOM LEFT";
+            }else{document.getElementById("reading").innerHTML = "BOTTOM RIGHT";
             }
         }
     </script>
