@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Switch Statements</title>
+	<meta name="author" content="Your Name">
+	<meta name="description" content="Example description">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="">
+	<link rel="icon" type="image/x-icon" href=""/>
+    <style>
+        div{
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+	<header></header>
+	<main>
+        <button onclick="showHide('html')">HTML</button><button onclick="showHide('css')">CSS</button><button onclick="showHide('js')">JS</button>
+        <div id="html"><img src="img/HTMLLogo.png" alt="HTML Logo"></div>
+        <div id="css"><img src="img/cssLogo.png" alt="CSS Logo"></div>
+        <div id="js"><img src="img/javaScriptLogo.png" alt="JS Logo"></div>
+    </main>
+	<footer></footer>
+	<script>
+        function showHide(x){
+            switch(x){
+                case "html" :
+                    document.getElementById(x).style.display="block";
+                    document.getElementById("css").style.display="none";
+                    document.getElementById("js").style.display="none";
+                    break;
+                case "css" :
+                    document.getElementById(x).style.display="block";
+                    document.getElementById("html").style.display="none";
+                    document.getElementById("js").style.display="none";
+                    break;
+                case "js" :
+                    document.getElementById(x).style.display="block";
+                    document.getElementById("css").style.display="none";
+                    document.getElementById("html").style.display="none";
+                    break;
+                default:
+                    console.log("invalid selection");
+                    break;
+            }
+        }
+    </script>
+</body>
+
+</html>
