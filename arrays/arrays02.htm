@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" onmousemove="printY(event)">
+    <head>
+        <meta charset="utf-8" />
+        <title>Arrays in JavaScript</title>
+        <style>
+            p{
+                font-size: 4em;
+                font-weight: 800;
+            }
+        </style>
+    </head>
+    <body >
+        
+        <hgroup >
+	       <h1>Arrays in JavaScript</h1>
+	       <h2 id="subHead">Working with Elements</h2>
+        </hgroup>
+        <button id="myButton" onclick="advance()">Advance Element</button>
+        <p id="reading"></p>
+       
+        
+        <script>
+            
+            const myArray = ["zero", "one", "two", "three", "four", "five"];
+            var x = 0;
+            
+            function advance(){
+                if(x < myArray.length){
+                    document.getElementById("reading").innerHTML = myArray[x];
+                }else{
+                    x = 0;
+                    document.getElementById("reading").innerHTML = myArray[x];
+                }
+                x++;
+            }
+            
+            
+            
+        </script>
+        
+    </body>
+</html>
