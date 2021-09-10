@@ -10,16 +10,26 @@
     <h1> Character Count</h1>
     <h2> Input Message</h2>
 
-    <form>
-        <input type="text" maxlenght="14" rows="10"/>
-    </form>
-
-    <p> Characters Left: </p>
-    <p> Your message to our company</p>
-    
+    <div class="container">
+        <form>
+            <textarea name="message" onkeyup="countChars(this);">
+            </textarea>
+            <p id="charNum">0 characters</p>
+       </form> 
+    </div>
 </body>
 <script>
-
+    function countChars(obj){
+    var maxLength = 20;
+    var strLength = obj.value.length;
+    
+    if(strLength > maxLength){
+        document.getElementById("charNum").innerHTML = '<span style="color: red;">'+strLength+' out of '+maxLength+' characters</span>';
+    }else{
+        document.getElementById("charNum").innerHTML = strLength+' out of '+maxLength+' characters';
+    }
+}
+    
 </script>
 
 </html>
