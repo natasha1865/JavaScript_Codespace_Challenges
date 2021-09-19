@@ -9,31 +9,18 @@
 <body>
     
 
-<input type="text" id="myText" onfocus="this.value=''">
-<button onclick="myFunction1()">Try it</button>
-<br>
-<input type="text" id="myText1"  onfocus="this.value=''">
-<button onclick="myFunction2()">Try it</button>
-<br>
-<input type="text" id="myText2"  onfocus="this.value=''">
-<button onclick="myFunction3()">Try it</button>
+<input type="text" id="myText" placeholder="ENTER A WORD" onfocus="this.value=''">
+<button id="myButton" onclick="alphabetSort()">Try it</button>
 
 <script>
-function myFunction1() {
-  document.getElementById("myText").value = "Johnny Bravo";
+let str = document.getElementById("myText").innerHTML.value;
+
+function alphabetSort() {
+  var x = str.split("");
+  return x.sort().join("");
 }
-function myFunction2() {
-    return str.split("").sort().join("");
-            }
-        }
+
 </script>
 </body>
 
 </html>
-
-function alphabetSoup(...theArgs) {
-  let soup = theArgs.sort()
-  return soup;
-}
-
-console.log(alphabetSoup("f", "d", "a", "c", "b", "e")) // ["a", "b", "c", "d", "e", "f"]
