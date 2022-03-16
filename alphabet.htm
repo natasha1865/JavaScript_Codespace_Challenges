@@ -20,6 +20,28 @@ function alphabetSort() {
   return x.sort().join("");
 }
 
+submit.onclick = function() {
+
+output.innerText = 'Output: ';
+
+//split function to split String into Array
+let string = input.value.split('');
+
+console.log("line 13, the result of split() function: " + string)
+
+string = string.sort();
+
+console.log("line 17, result of sorting: " + string)
+
+string = string.join('');
+
+console.log("joining the array into a String: " + string);
+
+output.innerText += string;
+
+}
+
+
 </script>
 </body>
 

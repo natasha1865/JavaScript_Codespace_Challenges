@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Selecting By ID</title>
+    </head>
+    <body>
+        
+        <hgroup >
+	       <h1>Selecting Elements by ID</h1>
+	       <h2 id="change">Change this</h2>
+        </hgroup>
+        
+        <button id="myButton" onclick="myFunction()">Click me</button>
+        
+        <script>
+            
+            
+            function myFunction(){
+                document.getElementById("change").innerHTML = "This is the new content";
+            }
+            
+        </script>
+        
+    </body>
+</html>

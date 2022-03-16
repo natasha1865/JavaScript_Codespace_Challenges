@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" onmousemove="printY(event)">
+    <head>
+        <meta charset="utf-8" />
+        <title>Conditionals</title>
+        <style>
+            p{
+                font-size: 4em;
+                font-weight: 800;
+            }
+        </style>
+    </head>
+    <body >
+        
+        <hgroup >
+	       <h1>Conditionals in JavaScript</h1>
+	       <h2 id="subHead">Where's my mouse?</h2>
+        </hgroup>
+        <p id="reading"></p>
+       
+        
+        <script>
+            
+            const docHeight = window.innerHeight;
+            function printY(e){
+                let mouseY = e.clientY;
+                if(mouseY < docHeight/2){
+                    document.getElementById("reading").innerHTML = "UP";
+                }else{
+                    document.getElementById("reading").innerHTML = "DOWN";
+                }
+            }
+            
+            
+            
+        </script>
+        
+    </body>
+</html>
