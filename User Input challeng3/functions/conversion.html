@@ -25,19 +25,23 @@
 
         // step 1
         // Create const for conversion
+        // 1km / 1.609344 caculation conversion
+        const miles = 1.609344
 
 
         // step 2
-        // Get user input and save to variable
+        let varInput = prompt("Type kilometers");
+        let kilometer = varInput;
 
 
         // step 3
         // Perform calculation and save result
+        let result = varInput / miles;
 
 
         // step 4
         // Display result in DOM, alert or console
-        console.log("The distance of " + /*<<input var>>*/ + "km after being converted is " + /*<<result var>>*/ + " in miles");
+        console.log("The distance of " + varInput + "km after being converted is " + result + " in miles");
 
         </script>
         <!-- End of Script -->
