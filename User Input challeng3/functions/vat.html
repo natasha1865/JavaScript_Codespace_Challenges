@@ -24,13 +24,15 @@
         <script>
             
             // VAT constant:
-            const vat = 14;
+            const vat = 14; 
+            const calc = 100;
+            let varInput = prompt("Type a number");
 
             // Get user input and save to variable
-                // code here..
+            let number = varInput;
 
             // Perform calculation here
-            let result;// save result of calculation to answer variable.
+            let result = number / calc * vat;
 
             // log VAT out to consol, DOM, or alert
             console.log("The VAT of entered amount is " + result);
