@@ -1,0 +1,14 @@
+/*table styling*/
+
+Button {
+  padding: 15px;
+  background-color: white;
+  text-align: center;
+  width: 55%;
+  border-color: none;
+  
+}
+
+.container {
+  margin-top: 25px;
+}
